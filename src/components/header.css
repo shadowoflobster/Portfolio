@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'BigShouldersDisplay';
+    src: url('../../public/fonts/BigShouldersDisplay-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Iceland';
+    src: url('../../public/fonts/Iceland-Regular.ttf');
+}
+
+.headerDiv{
+    height: 5.75rem;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerContent{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+}
+.headerContentLeft{
+    display: flex;
+}
+.levelSpan{
+    margin-right: 2.87rem;
+    font-family: 'BigShouldersDisplay';
+    font-size: 1rem;
+    color: rgb(255,255,255,0.6);
+    font-weight: 743px;
+    
+}
+
+.levelSpan > .child{
+   font-size: 1.6rem;
+    color: #7DFF68;
+    margin: 5px;
+
+}
+.headerAddBtn{
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid rgb(255,255,255,0.6);
+    background:none; 
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding: 0;
+    transition: fill 0.3s ease;
+    cursor: pointer;
+
+}
+.headerAddBtn>.child{
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    fill: #E84A4A;
+    transition: fill 0.3s ease;
+}
+.headerAddBtn:hover .child{
+    fill: #FFFF;
+}
+.headerAddBtn:hover{
+background-color: #E84A4A;
+
+}
+
+.headerContentRight{
+    display: flex;
+    gap: 1.7rem;
+    font-family: 'Iceland';
+    color: #7A7A7A;
+}
+.headerTime>.child{
+    color: #FFFFFF;
+
+}
+
+
+
+@media  (max-width: 768px) {
+    .headerContent{
+        width: 100%;
+    }
+    .levelSpan{
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 431px) {
+    .headerDiv{
+        display: none;
+    }
+    
+}

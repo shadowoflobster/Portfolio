@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'BigShouldersDisplay';
+    src: url('/public/fonts/BigShouldersDisplay-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Iceland';
+    src: url('/public/fonts/Iceland-Regular.ttf');
+}
+.navigation{
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+}
+.navList{
+    list-style: none;
+    display: flex;
+    gap:0.93rem;
+    margin: 0;  
+    padding: 0;
+    
+}
+
+.navItemHead{
+    height: 1.43rem;
+    display: flex;
+    background-image: url("../svg/sub-nav.svg");
+    font-family: 'BigShouldersDisplay';
+    font-size: 1.125rem;
+    color: white;
+    font-weight: 743;
+    letter-spacing: 0.075em;
+    padding-left: 0.5rem;
+    transition:  0.5s ease;
+
+
+}
+.navItemDesc{
+    height: 100%;
+    padding-top: 0.5rem;
+    padding-left: 0.6rem;
+    text-transform: uppercase;
+}
+.navItemPar{
+    margin:0;
+    width: 6.375rem;
+    font-family:"Iceland";
+    font-size: 0.43rem;
+    color: white;
+    letter-spacing: 0.075em;
+    opacity: 50%;
+}
+
+
+
+.navItem{
+    width: 9.4rem;
+    display:flex;
+    flex-direction: column;
+    height: 3.68rem;
+    border-left: 2px solid #242425;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.navItem:hover .navItemHead {
+    background-color: rgba(255, 0, 0, 0.426);
+}
+.navItem:hover{
+border-left: 2px solid rgba(255, 0, 0, 0.426);
+}
+
+@media (max-width:431px) {
+    .navigation{
+        display: none;
+    }
+}
